@@ -1,0 +1,72 @@
+/* - Página principal --------------------------------- */
+
+#navPrincipal {
+    height: 2em;
+}
+
+.cad {
+    background-color: transparent;
+    color: #2a65d1;
+    border: 2px solid #2a65d1;
+    padding: 0.5em;
+    border-radius: 0.4em;
+    transition: 0.3s;
+}
+
+.cad:hover {
+    background-color: #2a65d1;
+    color: white;
+}
+
+.lg {
+    display: inline-block;
+}
+
+.lg:hover::after {
+    width: 100%;
+    transition: width .2s;
+}
+
+.lg::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #2a65d1;
+    transition: width .4s;
+}
+
+#sectionPrincipal {
+    position: relative;
+    top: 2em;
+    height: calc(100vh - 2em);
+}
+
+#sec1 img {
+    width: 26em;
+}
+
+
+/* - Login --------------------------------- */
+.ladoEsquerdo {
+    background-color: #0a2558;
+    width: 70%;
+    height: 100vh;
+    float: left;
+}
+
+.ladoEsquerdo img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 38em;
+}
+
+.ladoDireito {
+    width: 30%;
+    height: 100vh;
+    float: right;
+}
+
+ 
